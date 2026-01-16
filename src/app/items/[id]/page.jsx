@@ -12,7 +12,7 @@ const ItemDetails = async({ params }) => {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded shadow">
-      <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
+      <div className="relative w-full h-72 mb-6 overflow-hidden rounded-lg">
         <Image
           src={item.image}
           alt={item.name}
