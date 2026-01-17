@@ -2,11 +2,13 @@
  
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const LoginForm = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState(""); 
+  
   // handle login
   const handleLogin =(e)=>{
     e.preventDefault()
@@ -14,6 +16,7 @@ const LoginForm = () => {
     // mock login and save data to cookie
     if(email === "badshagolder5@gmail.com" && password === "Badsha1"){
       document.cookie="auth=true; path=/";
+      toast("Log in successfully")
       router.push("/items")
     }
     else{

@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mobile Item App
 
-## Getting Started
+A simple **Next.js 16 + TailwindCSS** application for managing mobile items.  
+This project includes a landing page, item listing, item details, and a mock login system. Users can optionally add new items to the database when logged in.
 
-First, run the development server:
+---
+
+## 📝 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Setup & Installation](#setup--installation)
+- [Routes Summary](#routes-summary)
+- [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
+- [License](#license)
+
+---
+
+## 🚀 Project Overview
+
+This project demonstrates:
+
+- Public landing page with **7 sections** (Hero, Features, About, Services, Popular Items, Testimonials, Contact)
+- Mock login authentication with hardcoded email & password
+- Item listing page fetching data from **MongoDB**
+- Item details page showing full information about a mobile
+- Optional protected page for adding new items
+- Use of **Next.js App Router**, TailwindCSS, MongoDB, and React Components
+
+---
+
+## ✅ Features
+
+### Landing Page
+- Hero Section
+- Features Section
+- About Section
+- Services Section
+- Popular Items Section
+- Testimonials Section
+- Contact Form Section
+
+### Authentication
+- Mock login using hardcoded credentials
+- Login state stored in cookies
+- Redirects to protected pages if user is not logged in
+- Optional social login (Google) using NextAuth.js
+
+### Item Management
+- **Items Page**: Shows all mobile items from MongoDB
+- **Item Card**: Displays mobile image, name, category, price, and short description
+- **Item Details Page**: Shows full details of a selected mobile
+- **Add Item Page** (protected): Form to add new mobile item to the database
+
+---
+
+## ⚡ Setup & Installation
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone (https://github.com/badsha103868/mobile-item-app-next-js.git)
+cd mobile-app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+    npm install
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.Create .env file in root folder
+4.Run the development server
+  npm run dev

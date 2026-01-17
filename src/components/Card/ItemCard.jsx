@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -21,7 +23,7 @@ const ItemCard = ({ item }) => {
       <p className="mt-2 text-sm line-clamp-3 text-gray-700">{item.description}</p>
 
       <Link
-        href={`/items/${item.id}`}
+         href={`/items/${item._id.toString()}`} 
         className="mt-auto inline-block text-center bg-black text-white py-2 rounded mt-4 hover:bg-gray-800"
       >
         View Details
