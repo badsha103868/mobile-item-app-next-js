@@ -14,9 +14,9 @@ const ItemCard = ({ item }) => {
         />
       </div>
 
-      <h2 className="text-xl font-bold mb-1">{item.name}</h2>
+      <h2 className="text-xl text-gray-500 font-bold mb-1">{item.name}</h2>
       <p className="text-sm text-gray-500 mb-2">{item.category}</p>
-      <p className="font-semibold mb-2">{item.price}</p>
+      <p className="font-semibold text-gray-500 mb-2">{item.price}</p>
 
       <p className="mt-2 text-sm line-clamp-3 text-gray-700">{item.description}</p>
 

@@ -21,9 +21,9 @@ const ItemDetails = async({ params }) => {
         />
       </div>
 
-      <h1 className="text-3xl font-bold mb-2">{item.name}</h1>
+      <h1 className="text-3xl  text-gray-500 font-bold mb-2">{item.name}</h1>
       <p className="text-gray-500 mb-4">{item.category}</p>
-      <p className="mb-4 font-semibold">{item.price}</p>
+      <p className="mb-4  text-gray-500 font-semibold">{item.price}</p>
 
       <p className="mb-6 text-gray-700">{item.description}</p>
     </div>
